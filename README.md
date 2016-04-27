@@ -9,6 +9,12 @@ Dependencies
 
 gstreamer 1, gst-python, gst-plugins-base, gst-plugins-good
 
+Installation
+------------
+```
+python setup.py install --user
+```
+
 Usage
 -----
 
