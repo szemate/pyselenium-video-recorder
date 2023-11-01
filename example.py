@@ -2,6 +2,7 @@ import unittest
 import time
 
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 from selenium_video import VideoRecorder
 
@@ -24,7 +25,7 @@ class TestSeleniumVideoDemo(unittest.TestCase):
         self.driver.get("http://google.com")
         time.sleep(2)
 
-        element = self.driver.find_element_by_css_selector("input[type='text']")
+        element = self.driver.find_element(By.ID, 'APjFqb')
         element.click()
         element.send_keys("hello")
         time.sleep(3)
